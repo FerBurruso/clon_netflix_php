@@ -1,0 +1,488 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body{
+    color:#FFFFFF;       
+    background-color: black;
+}
+
+.contenedor_principal{
+    background-image:  url("../images/fondo_netflix_hd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* height: 100vh;*/
+    width: 100%;
+    text-align: center;
+    color:#FFFFFF;       
+}
+
+.contenedor_gradiente{
+/*    position: absolute;*/
+    width: 100%;
+/*    height: 100vh;*/
+    border-bottom: 8px solid #222;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0.4) 40%,rgba(0,0,0,.20) 75%,rgba(0,0,0,.8) 100%);
+}
+
+
+.seccion_header {
+    display: flex; 
+    height: 100px;
+    min-height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: center;
+    background-color: black;
+
+}
+
+.logo{
+    display:flex;
+    height: 15vh;
+    min-height: 60px;
+    position: absolute;
+    left: 10px;
+    margin: 10px;
+}
+
+.combo_idioma{    
+    display:flex;
+    height: 6vh;
+    width: 120px;
+    min-height: 25px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(0,0,0,.4);
+    background-image: url("../images/icono_planeta.png");
+    background-position:left center;
+    background-repeat: no-repeat;
+    border: 1px solid #aaa;
+    color:#FFFFFF;   
+
+}
+
+.boton_rojo{    
+    display:flex;
+    background-color: #E50914;
+    border-radius: 5px;
+    border: none;
+    height: 6vh;
+    min-height: 30px;
+    margin: 10px;
+    padding: 5px 16px;
+    color:#FFFFFF;   
+
+}
+
+.story_card_externo{
+    padding: 30px 30px;
+}
+
+.story_card{
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.titulo_principal{
+    font-size: 1.5rem;
+    margin:10px;
+}
+
+.titulo_secundario{
+    font-size: 1rem;
+}
+
+h3{
+    margin:1rem auto;
+}
+
+.subcontenedor_mail{
+    display: flex;
+    justify-content: center;
+}
+
+.input_mail{
+    text-align: left;
+    color: black;
+    width: 450px;
+    height: 60px;
+    margin: 10px 0px;
+    padding: 5px 16px;
+    font-size: 1rem;
+}
+
+.boton_mail{
+    width: 200px;
+    height: 60px;
+    background-color: #E50914;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0px;
+    padding: 5px 16px;
+    font-size: 1rem;
+    color:#FFFFFF;   
+}
+
+.perfiles_ninos{
+    border-bottom: 8px solid #222;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.imagen_ninos{
+    max-width: 50%;
+}
+
+/*titulo texto*/
+.texto_ninos{
+    font-size: 1.5rem;
+}
+
+/*titulo grande*/
+.texto_ninos h2{
+    font-size: 2rem;
+}
+
+footer{
+    font-size: 1rem;
+    color: #757575;
+    margin-left: 113px;
+    margin-top: 70px;
+}
+
+.footer_top{
+  display: grid;
+  justify-content: left;
+  justify-items:left;
+  grid-template-columns: 4fr;
+  grid-template-rows: 30px;
+}
+
+.footer_columnas{
+    display: grid;
+    justify-content: space-around;
+    justify-items:left;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px 30px 30px;
+}
+
+.footer_columnas a{
+    font-size: 0.8rem;
+    color:#757575;
+}
+
+.footer_link{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-decoration:none;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:920px){
+
+    .story_card{
+    /*    position: relative;*/
+        width: 100%;
+        padding: 10px 0;
+        max-width: 920px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .subcontenedor_mail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton_mail{
+        width: 122px;
+        height: 40px;
+        margin: 4px 0px;
+        padding: 0px 16px;
+/*        font-size: 15px;*/
+    }
+
+
+    .perfiles_ninos{
+        flex-direction: column-reverse;
+        padding: 10px;
+        text-align: center;
+        justify-content: flex-end;
+    }
+
+    .imagen_ninos{
+        max-width: 75%;
+    }
+
+    .texto_ninos h2{
+        text-align: center;
+    }
+
+
+    .texto_ninos{
+        text-align: center;
+    }
+
+    
+    footer{
+        margin-left: 80px;
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    .contenedor_principal{
+        background-image:  url("../images/fondo_netflix_medium.jpg");
+    }
+
+    .titulo_principal{
+        font-size: 0.8rem;
+    }
+    
+    .titulo_secundario{
+        font-size: 0.7rem;
+    }
+
+    .texto_ninos h2{
+        text-align: center;
+/*        font-size: 1rem;*/
+    }
+
+
+    .texto_ninos{
+        text-align: center;
+/*        font-size: 0.8rem;*/
+    }
+
+
+
+    .story_card_externo{
+        padding: 10px 0px;
+    }
+
+    .input_mail{
+        width: 300px;
+        height: 40px;
+    }
+
+    .footer_top{
+        grid-template-columns: 3fr;
+      }
+      
+      .footer_columnas{
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+
+    footer{
+        margin-left: 50px;
+    }
+    
+}
+
+@media (max-device-width : 500px) {
+
+    .contenedor_principal{
+        background-image:  url("../images/fondo_netflix_chica.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+      
+    }    
+    
+    .contenedor_gradiente{
+            height: 50vh;
+        }
+        
+
+    .logo{
+        display:flex;
+        max-height: 15px;
+        position: absolute;
+        left: 4px;
+        margin: 4px;
+    }
+
+    .boton_rojo{
+        width: 90px;
+        height: 30px;
+        margin: 2px 0px;
+        padding: 0px 8px;
+        font-size: 10px;
+    }
+
+    .titulo_principal{
+        font-size: 0.7rem;
+    }
+    
+    .titulo_secundario{
+        font-size: 0.6rem;
+    }
+
+
+    .combo_idioma{    
+        display:flex;
+        height: 30px;
+        width: 90px;
+        text-align: center;
+        margin: 5px;
+        background-color: rgba(0,0,0,.4);
+        background-image: url("../images/icono_planeta.png");
+        background-size: 20%;
+        background-position:left center;
+        background-repeat: no-repeat;
+        border: 0.8px solid #aaa;
+        font-size: 10px;
+    }
+    
+
+    .story_card_externo{
+        padding: 4px 0px;
+    }
+    
+    .story_card{
+        position: relative;
+        width: 100%;
+        padding: 5px 0;
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .subcontenedor_mail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_mail{
+        font-size: 0.6rem;
+    }
+
+    
+    .input_mail{
+        text-align: left;
+        color: black;
+        width: 240px;
+        height: 25px;
+        margin: 5px 0px;
+        padding: 2px 8px;
+        font-size: 0.7rem;
+    }
+
+
+    .boton_mail{
+        width: 120px;
+        height: 25px;
+        margin: 4px 0px;
+        padding: 0px 16px;
+        font-size: 0.7rem;
+    }
+
+    .perfiles_ninos{
+        padding: 10px;
+
+    }
+
+    .texto_ninos h2{
+        font-size: 0.9rem;
+    }
+
+
+    .texto_ninos{
+        font-size: 0.8rem;
+    }
+
+    
+    .perfiles_ninos{
+        height: 50vh;
+    }
+    
+    .footer_top{
+        grid-template-columns: 2fr;
+      }
+      
+      .footer_columnas{
+          grid-template-columns: 1fr 1fr;
+      }
+
+  }
+  
+  
+@media (max-device-width : 360px) {
+
+    
+    .contenedor_gradiente{
+            height: 50vh;
+        }
+        
+
+    .logo{
+        max-height: 10px;
+    }
+
+    .boton_rojo{
+        width: 70px;
+        height: 20px;
+        font-size: 8px;
+    }
+
+    .combo_idioma{    
+        height: 20px;
+        font-size: 8px;
+    }
+        
+    .contenedor_mail{
+        font-size: 0.4rem;
+    }
+
+    
+    .input_mail{
+        width: 200px;
+        height: 20px;
+        font-size: 0.5rem;
+    }
+
+
+    .boton_mail{
+        width: 110px;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+
+    .perfiles_ninos{
+        padding: 10px;
+
+    }
+
+  }
+  
